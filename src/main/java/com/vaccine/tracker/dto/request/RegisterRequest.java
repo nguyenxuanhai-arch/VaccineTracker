@@ -2,7 +2,10 @@ package com.vaccine.tracker.dto.request;
 
 import com.vaccine.tracker.enums.Gender;
 
-import javax.validation.constraints.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 
 /**
  * DTO for user registration requests.

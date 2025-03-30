@@ -1,12 +1,13 @@
 package com.vaccine.tracker.dto.request;
 
+import java.time.LocalDate;
+
 import com.vaccine.tracker.enums.Gender;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Past;
-import javax.validation.constraints.Size;
-import java.time.LocalDate;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Past;
+import jakarta.validation.constraints.Size;
 
 /**
  * DTO for child creation and update requests.

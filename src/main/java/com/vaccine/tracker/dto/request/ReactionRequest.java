@@ -1,7 +1,12 @@
 package com.vaccine.tracker.dto.request;
 
-import javax.validation.constraints.*;
 import java.time.LocalDateTime;
+
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 /**
  * DTO for reaction creation requests.

@@ -1,0 +1,148 @@
+# Báo cáo phân tích hệ thống Child Vaccine Schedule Tracking System
+
+## 1. Giới thiệu
+
+Hệ thống **Child Vaccine Schedule Tracking System** là một phần mềm quản lý và theo dõi lịch tiêm chủng cho trẻ em tại một cơ sở tiêm chủng. Hệ thống cung cấp nhiều chức năng giúp khách hàng dễ dàng quản lý hồ sơ trẻ em, đặt lịch tiêm, thanh toán và theo dõi quá trình tiêm chủng.
+
+### 1.1. Trang chủ
+
+Trang chủ của hệ thống cung cấp các thông tin quan trọng như:
+
+- Giới thiệu về cơ sở tiêm chủng.
+- Danh sách các dịch vụ tiêm chủng.
+- Bảng giá các gói tiêm chủng.
+- Cẩm nang tiêm chủng giúp khách hàng hiểu rõ về lịch tiêm cần thiết.
+- Thông tin liên hệ và hỗ trợ khách hàng.
+
+## 2. Phân quyền người dùng
+
+Hệ thống hỗ trợ các vai trò sau:
+
+- **Guest (Khách vãng lai)**:
+
+  - Truy cập trang chủ, tìm hiểu thông tin dịch vụ, bảng giá.
+  - Đăng ký tài khoản.
+
+- **Customer (Khách hàng - phụ huynh trẻ)**:
+
+  - Quản lý hồ sơ trẻ em.
+  - Xem lịch tiêm chủng, đặt lịch tiêm.
+  - Thanh toán đơn hàng, theo dõi lịch sử đơn đặt lịch.
+  - Nhận thông báo nhắc lịch tiêm.
+  - Đánh giá cơ sở tiêm chủng, ghi nhận phản ứng sau tiêm.
+
+- **Staff (Nhân viên y tế)**:
+
+  - Xác nhận lịch tiêm và cập nhật trạng thái tiêm chủng.
+  - Quản lý hồ sơ trẻ em và kết quả tiêm chủng.
+  - Hỗ trợ khách hàng xử lý phản ứng sau tiêm.
+
+- **Admin (Quản trị viên)**:
+
+  - Quản lý toàn bộ hệ thống.
+  - Quản lý người dùng, vaccine, lịch tiêm, bảng giá.
+  - Theo dõi doanh thu, xuất báo cáo thống kê.
+  - Quản lý chính sách thanh toán và hủy lịch tiêm.
+  - Quản lý phản hồi khách hàng.
+
+### 2.1. Hệ thống phân quyền dựa trên Role & Permission
+
+Hệ thống sử dụng mô hình phân quyền **Role-Based Access Control (RBAC)** kết hợp với **Permission-Based Access Control (PBAC)** để quản lý quyền hạn một cách linh hoạt.
+
+- **Role (Vai trò)**: Xác định nhóm quyền của người dùng (Guest, Customer, Staff, Admin).
+- **Permission (Quyền hạn)**: Xác định các hành động cụ thể mà một vai trò có thể thực hiện.
+
+#### 2.1.1. Bảng quyền hạn chi tiết theo vai trò
+
+| Role         | Quyền hạn                                                                                                                                              |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Guest**    | `VIEW_HOMEPAGE`, `VIEW_PRICING`, `REGISTER_ACCOUNT`                                                                                                    |
+| **Customer** | `MANAGE_CHILD_PROFILE`, `VIEW_VACCINE_SCHEDULE`, `BOOK_APPOINTMENT`, `MAKE_PAYMENT`, `RECEIVE_NOTIFICATIONS`, `SUBMIT_FEEDBACK`, `REPORT_SIDE_EFFECTS` |
+| **Staff**    | `CONFIRM_APPOINTMENT`, `UPDATE_VACCINE_RECORDS`, `MANAGE_CHILD_PROFILE`, `ASSIST_SIDE_EFFECTS`, `VIEW_CUSTOMER_FEEDBACK`                               |
+| **Admin**    | `MANAGE_USERS`, `MANAGE_VACCINES`, `MANAGE_SCHEDULES`, `UPDATE_PRICING`, `GENERATE_REPORTS`, `HANDLE_PAYMENT_POLICIES`, `MANAGE_FEEDBACK`              |
+
+Một vai trò có thể có nhiều quyền, và một quyền có thể được cấp cho nhiều vai trò khác nhau.
+
+## 3. Dịch vụ tiêm chủng linh hoạt
+
+Hệ thống cung cấp các gói dịch vụ tiêm chủng phù hợp với từng nhu cầu khách hàng:
+
+- **Tiêm lẻ**: Khách hàng có thể đặt lịch tiêm từng mũi riêng lẻ.
+- **Tiêm trọn gói**: Đăng ký toàn bộ gói tiêm theo độ tuổi.
+- **Tiêm cá thể hóa**: Dịch vụ linh hoạt tùy theo yêu cầu của khách hàng.
+
+## 4. Quản lý quá trình tiêm chủng
+
+Quy trình tiêm chủng được hệ thống quản lý chặt chẽ như sau:
+
+1. **Khách hàng đặt lịch tiêm chủng**.
+2. **Khách hàng đến cơ sở tiêm chủng theo lịch hẹn**.
+3. **Nhân viên y tế thực hiện tiêm và ghi nhận kết quả vào hồ sơ**.
+4. **Khách hàng thực hiện thanh toán**.
+5. **Khách hàng đánh giá cơ sở tiêm chủng**.
+
+## 5. Quản lý lịch tiêm và thông báo nhắc nhở
+
+Hệ thống tự động gửi thông báo nhắc nhở qua email/SMS để khách hàng không bỏ quên các mũi tiêm quan trọng. Khách hàng có thể theo dõi lịch tiêm thông qua tài khoản cá nhân.
+
+## 6. Chính sách thanh toán và hủy đơn đặt lịch
+
+- Khách hàng có thể thanh toán trực tuyến hoặc tại cơ sở tiêm chủng.
+- Chính sách hủy lịch tiêm linh hoạt, có thể yêu cầu hoàn tiền tùy điều kiện.
+
+## 8. API Endpoints
+
+### 8.1. Xác thực & Quản lý người dùng (/api/auth, /api/users)
+
+- `POST /api/auth/register`: Đăng ký tài khoản
+- `POST /api/auth/login`: Đăng nhập, nhận JWT token
+- `POST /api/auth/logout`: Đăng xuất
+- `GET /api/users/profile`: Xem thông tin cá nhân
+- `PUT /api/users/profile`: Cập nhật thông tin cá nhân
+- `GET /api/users`: Danh sách tài khoản (Admin)
+- `DELETE /api/users/{id}`: Xóa tài khoản (Admin)
+
+### 8.2. Quản lý hồ sơ trẻ em (/api/children)
+
+- `POST /api/children`: Thêm hồ sơ trẻ
+- `GET /api/children`: Lấy danh sách trẻ em
+- `GET /api/children/{id}`: Xem chi tiết hồ sơ trẻ
+- `PUT /api/children/{id}`: Cập nhật hồ sơ trẻ
+- `DELETE /api/children/{id}`: Xóa hồ sơ trẻ
+
+### 8.3. Quản lý vaccine & lịch tiêm
+
+- `GET /api/vaccines`: Danh sách vaccine
+- `POST /api/vaccines`: Thêm vaccine (Admin)
+- `PUT /api/vaccines/{id}`: Cập nhật vaccine (Admin)
+- `DELETE /api/vaccines/{id}`: Xóa vaccine (Admin)
+- `GET /api/schedules/{childId}`: Xem lịch tiêm của trẻ
+- `POST /api/schedules`: Đặt lịch tiêm
+- `PUT /api/schedules/{id}`: Cập nhật lịch tiêm (Staff, Admin)
+- `DELETE /api/schedules/{id}`: Hủy lịch tiêmDELETE /api/schedules/{id}: Hủy lịch tiêm
+
+**8.4. Quản lý phản ứng sau tiêm**&#x20;
+
+- **POST /api/reactions:** Ghi nhận phản ứng sau tiêm
+- GET /api/reactions/{childId}:\*\*\* Xem phản ứng sau tiêm
+
+8.5  Quản lý thanh toán & đơn hàng&#x20;
+
+-  POST /api/orders:\*\*\* Tạo đơn đặt lịch
+- GET /api/orders: Xem danh sách đơn hàng
+- POST /api/payments/{orderId}: Thanh toán đơn hàng
+
+8.6 Quản lý rating & feedback (/api/feedbacks)
+
+       POST /api/feedbacks: Gửi đánh giá
+
+       GET /api/feedbacks: Xem danh sách feedback.&#x20;
+
+8.7 Dashboard & Báo cáo&#x20;
+
+      GET /api/reports/schedule: Báo cáo lịch tiêm
+
+      GET /api/reports/vaccine: Báo cáo vaccine đã sử dụng
+
+      GET /api/reports/revenue: Báo cáo doanh thu
+

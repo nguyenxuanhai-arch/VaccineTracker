@@ -15,10 +15,8 @@ public class ApiController {
     @GetMapping("/status")
     public ResponseEntity<Map<String, Object>> getStatus() {
         Map<String, Object> response = new HashMap<>();
-        response.put("status", "UP");
-        response.put("message", "Application is running");
-        response.put("timestamp", System.currentTimeMillis());
-        
+        response.put("status", "OK");
+        response.put("message", "API is running");
         return ResponseEntity.ok(response);
     }
 }

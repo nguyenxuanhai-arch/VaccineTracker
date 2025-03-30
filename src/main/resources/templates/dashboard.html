@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}">Dashboard - Child Vaccine Tracker</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" th:href="@{/dashboard}">Child Vaccine Tracker</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" th:href="@{/dashboard}">Dashboard</a>
+                    </li>
+                    <li class="nav-item" sec:authorize="hasRole('ROLE_PARENT')">
+                        <a class="nav-link" th:href="@{/parent/children}">My Children</a>
+                    </li>
+                    <li class="nav-item" sec:authorize="hasRole('ROLE_PARENT')">
+                        <a class="nav-link" th:href="@{/parent/vaccinations}">Vaccinations</a>
+                    </li>
+                    <li class="nav-item" sec:authorize="hasRole('ROLE_HEALTHCARE_PROVIDER')">
+                        <a class="nav-link" th:href="@{/provider/schedule}">Schedule</a>
+                    </li>
+                    <li class="nav-item" sec:authorize="hasRole('ROLE_ADMIN')">
+                        <a class="nav-link" th:href="@{/admin/users}">Users</a>
+                    </li>
+                    <li class="nav-item" sec:authorize="hasRole('ROLE_ADMIN')">
+                        <a class="nav-link" th:href="@{/admin/vaccines}">Vaccines</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <span class="navbar-text me-3" sec:authentication="name"></span>
+                    <form th:action="@{/logout}" method="post">
+                        <button type="submit" class="btn btn-sm btn-light">Logout</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Dashboard</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-success">
+                            <h4>Welcome to Child Vaccine Tracker</h4>
+                            <p>This system helps you keep track of your child's vaccination schedule.</p>
+                        </div>
+                        
+                        <div sec:authorize="hasRole('ROLE_PARENT')" class="mt-4">
+                            <h3>Parent Dashboard</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Children</h5>
+                                            <p class="card-text">Manage your children's profiles and vaccination records.</p>
+                                            <a th:href="@{/parent/children}" class="btn btn-primary">View Children</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Upcoming Vaccinations</h5>
+                                            <p class="card-text">View and manage upcoming vaccination schedules.</p>
+                                            <a th:href="@{/parent/vaccinations}" class="btn btn-primary">View Schedule</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div sec:authorize="hasRole('ROLE_HEALTHCARE_PROVIDER')" class="mt-4">
+                            <h3>Healthcare Provider Dashboard</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Today's Schedule</h5>
+                                            <p class="card-text">View appointments scheduled for today.</p>
+                                            <a th:href="@{/provider/schedule}" class="btn btn-primary">View Schedule</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Record Vaccination</h5>
+                                            <p class="card-text">Record new vaccinations for children.</p>
+                                            <a th:href="@{/provider/record}" class="btn btn-primary">Record Vaccination</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div sec:authorize="hasRole('ROLE_ADMIN')" class="mt-4">
+                            <h3>Admin Dashboard</h3>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">User Management</h5>
+                                            <p class="card-text">Manage system users.</p>
+                                            <a th:href="@{/admin/users}" class="btn btn-primary">Manage Users</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Vaccine Management</h5>
+                                            <p class="card-text">Manage vaccine database.</p>
+                                            <a th:href="@{/admin/vaccines}" class="btn btn-primary">Manage Vaccines</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">System Reports</h5>
+                                            <p class="card-text">View system reports and statistics.</p>
+                                            <a th:href="@{/admin/reports}" class="btn btn-primary">View Reports</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="bg-light text-center text-muted py-3 mt-5">
+        <div class="container">
+            <p>&copy; 2025 Child Vaccine Tracker. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

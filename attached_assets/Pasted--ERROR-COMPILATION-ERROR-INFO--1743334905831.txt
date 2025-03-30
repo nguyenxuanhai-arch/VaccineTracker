@@ -1,0 +1,518 @@
+[ERROR] COMPILATION ERROR :
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[7,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[8,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[9,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[14,37] package com.vaccine.tracker.validator does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[38,13] cannot find symbol
+  symbol:   class ChildValidator
+  location: class com.vaccine.tracker.service.impl.ChildServiceImpl
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ReactionServiceImpl.java:[10,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ReactionServiceImpl.java:[11,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ReactionServiceImpl.java:[12,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/controller/ReportController.java:[4,35] cannot find symbol
+  symbol:   class ReportService
+  location: package com.vaccine.tracker.service
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/controller/ReportController.java:[27,13] cannot find symbol
+  symbol:   class ReportService
+  location: class com.vaccine.tracker.controller.ReportController
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/FeedbackServiceImpl.java:[9,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/FeedbackServiceImpl.java:[10,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/FeedbackServiceImpl.java:[11,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/VaccineServiceImpl.java:[7,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/VaccineServiceImpl.java:[8,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/VaccineServiceImpl.java:[9,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/PaymentServiceImpl.java:[9,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/PaymentServiceImpl.java:[10,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/PaymentServiceImpl.java:[11,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ScheduleServiceImpl.java:[10,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ScheduleServiceImpl.java:[11,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ScheduleServiceImpl.java:[12,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ScheduleServiceImpl.java:[19,37] package com.vaccine.tracker.validator does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ScheduleServiceImpl.java:[49,13] cannot find symbol
+  symbol:   class ScheduleValidator
+  location: class com.vaccine.tracker.service.impl.ScheduleServiceImpl
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/UserServiceImpl.java:[7,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/UserServiceImpl.java:[8,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/UserServiceImpl.java:[9,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/UserServiceImpl.java:[27,41] interface expected here
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/entity/User.java:[35,8] com.vaccine.tracker.entity.User is not abstract and does not override abstract method getUsername() in org.springframework.security.core.userdetails.UserDetails
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/entity/Schedule.java:[201,54] 
+cannot find symbol
+  symbol:   method getId()
+  location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/entity/Schedule.java:[202,60] 
+cannot find symbol
+  symbol:   method getId()
+  location: variable vaccine of type com.vaccine.tracker.entity.Vaccine
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/entity/Child.java:[58,20] cannot find symbol
+  symbol:   method setChild(com.vaccine.tracker.entity.Child)
+  location: variable vaccination of type com.vaccine.tracker.entity.Vaccination
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/entity/Child.java:[63,20] cannot find symbol
+  symbol:   method setChild(<nulltype>)
+  location: variable vaccination of type com.vaccine.tracker.entity.Vaccination
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[43,40] cannot find symbol
+  symbol:   class ResourceNotFoundException
+  location: class com.vaccine.tracker.service.impl.ChildServiceImpl
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[47,23] cannot find symbol
+  symbol:   class UnauthorizedException
+  location: class com.vaccine.tracker.service.impl.ChildServiceImpl
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[60,39] cannot find symbol
+  symbol:   method getCurrentUser()
+  location: variable userService of type com.vaccine.tracker.service.UserService
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[63,24] cannot find symbol
+  symbol:   method getRole()
+  location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[64,24] cannot find symbol
+  symbol:   method getRole()
+  location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[65,24] cannot find symbol
+  symbol:   method getId()
+  location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[68,23] cannot find symbol
+  symbol:   class UnauthorizedException
+  location: class com.vaccine.tracker.service.impl.ChildServiceImpl
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[78,43] incompatible types: java.util.Optional<com.vaccine.tracker.entity.User> cannot be converted to com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[81,39] cannot find symbol
+  symbol:   method getCurrentUser()
+  location: variable userService of type com.vaccine.tracker.service.UserService
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[82,25] cannot find symbol
+  symbol:   method getRole()
+  location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[82,75] cannot find symbol
+  symbol:   method getId()
+  location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[83,23] cannot find symbol
+  symbol:   class UnauthorizedException
+  location: class com.vaccine.tracker.service.impl.ChildServiceImpl
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[87,55] cannot find symbol
+  symbol:   method findByParentAndFullNameIgnoreCase(com.vaccine.tracker.entity.User,java.lang.String)    
+  location: variable childRepository of type com.vaccine.tracker.repository.ChildRepository
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[89,30] cannot find symbol
+  symbol:   method getDateOfBirth()
+  location: variable existingChild of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[90,27] cannot find symbol
+  symbol:   class BadRequestException
+  location: class com.vaccine.tracker.service.impl.ChildServiceImpl
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[96,14] cannot find symbol
+  symbol:   method setParent(com.vaccine.tracker.entity.User)
+  location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[111,23] cannot find symbol
+  symbol:   class UnauthorizedException
+  location: class com.vaccine.tracker.service.impl.ChildServiceImpl
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[127,23] cannot find symbol
+  symbol:   class UnauthorizedException
+  location: class com.vaccine.tracker.service.impl.ChildServiceImpl
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[135,39] cannot find symbol
+  symbol:   method getCurrentUser()
+  location: variable userService of type com.vaccine.tracker.service.UserService
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[138,24] cannot find symbol
+  symbol:   method getRole()
+  location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[138,68] cannot find symbol
+  symbol:   method getRole()
+  location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[147,39] cannot find symbol
+  symbol:   method getCurrentUser()
+  location: variable userService of type com.vaccine.tracker.service.UserService
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[150,24] cannot find symbol
+  symbol:   method getRole()
+  location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[150,68] cannot find symbol
+  symbol:   method getRole()
+  location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[151,35] cannot find symbol
+  symbol:   method findByFullNameContainingIgnoreCase(java.lang.String)
+  location: variable childRepository of type com.vaccine.tracker.repository.ChildRepository
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[154,53] cannot find symbol
+  symbol:   method findByFullNameContainingIgnoreCase(java.lang.String)
+  location: variable childRepository of type com.vaccine.tracker.repository.ChildRepository
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[156,43] cannot find symbol
+  symbol:   method getParent()
+  location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[156,82] cannot find symbol
+  symbol:   method getId()
+  location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[163,39] cannot find symbol
+  symbol:   method getCurrentUser()
+  location: variable userService of type com.vaccine.tracker.service.UserService
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[166,24] cannot find symbol
+  symbol:   method getRole()
+  location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[166,68] cannot find symbol
+  symbol:   method getRole()
+  location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[167,35] cannot find symbol
+  symbol:   method findByDateOfBirthBetween(java.time.LocalDate,java.time.LocalDate)
+  location: variable childRepository of type com.vaccine.tracker.repository.ChildRepository
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[170,53] cannot find symbol
+  symbol:   method findByDateOfBirthBetween(java.time.LocalDate,java.time.LocalDate)
+  location: variable childRepository of type com.vaccine.tracker.repository.ChildRepository
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[172,43] cannot find symbol
+  symbol:   method getParent()
+  location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[172,82] cannot find symbol
+  symbol:   method getId()
+  location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[179,39] cannot find symbol
+  symbol:   method getCurrentUser()
+  location: variable userService of type com.vaccine.tracker.service.UserService
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[182,24] cannot find symbol
+  symbol:   method getRole()
+  location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[182,68] cannot find symbol
+  symbol:   method getRole()
+  location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[183,35] cannot find symbol
+  symbol:   method findChildrenNeedingVaccination(int)
+  location: variable childRepository of type com.vaccine.tracker.repository.ChildRepository
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[186,53] cannot find symbol
+  symbol:   method findChildrenNeedingVaccination(int)
+  location: variable childRepository of type com.vaccine.tracker.repository.ChildRepository
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[188,43] cannot find symbol
+  symbol:   method getParent()
+  location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[188,82] cannot find symbol
+  symbol:   method getId()
+  location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[195,39] cannot find symbol
+  symbol:   method getCurrentUser()
+  location: variable userService of type com.vaccine.tracker.service.UserService
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[197,40] cannot find symbol
+  symbol:   class ResourceNotFoundException
+  location: class com.vaccine.tracker.service.impl.ChildServiceImpl
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[200,24] cannot find symbol
+  symbol:   method getRole()
+  location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[200,68] cannot find symbol
+  symbol:   method getRole()
+  location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[205,21] cannot find symbol
+  symbol:   method getParent()
+  location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[205,60] cannot find symbol
+  symbol:   method getId()
+  location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/UserService.java:[50,53] cannot find symbol
+  symbol:   method getPassword()
+  location: variable user of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[29,29] cannot find symbol
+  symbol:   method getId()
+  location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[30,35] cannot find symbol
+  symbol:   method getFullName()
+  location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[31,38] cannot find symbol
+  symbol:   method getDateOfBirth()
+  location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[32,33] cannot find symbol
+  symbol:   method getGender()
+  location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[33,39] cannot find symbol
+  symbol:   method getMedicalNotes()
+  location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[34,36] cannot find symbol
+  symbol:   method getAllergies()
+  location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[37,18] cannot find symbol
+  symbol:   method getParent()
+  location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[38,39] cannot find symbol
+  symbol:   method getParent()
+  location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[39,41] cannot find symbol
+  symbol:   method getParent()
+  location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[73,14] cannot find symbol
+  symbol:   method setFullName(java.lang.String)
+  location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[74,14] cannot find symbol
+  symbol:   method setDateOfBirth(java.time.LocalDate)
+  location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[75,14] cannot find symbol
+  symbol:   method setGender(com.vaccine.tracker.enums.Gender)
+  location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[76,14] cannot find symbol
+  symbol:   method setMedicalNotes(java.lang.String)
+  location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[77,14] cannot find symbol
+  symbol:   method setAllergies(java.lang.String)
+  location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[93,14] cannot find symbol
+  symbol:   method setFullName(java.lang.String)
+  location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[94,14] cannot find symbol
+  symbol:   method setDateOfBirth(java.time.LocalDate)
+  location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[95,14] cannot find symbol
+  symbol:   method setGender(com.vaccine.tracker.enums.Gender)
+  location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[96,14] cannot find symbol
+  symbol:   method setMedicalNotes(java.lang.String)
+  location: variable child of type com.vaccine.tracker.entity.Child
+[INFO] 100 errors
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.770 s
+[INFO] Finished at: 2025-03-30T18:40:57+07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project vaccine-tracker: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[7,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[8,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[9,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[14,37] package com.vaccine.tracker.validator does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[38,13] cannot find symbol
+[ERROR]   symbol:   class ChildValidator
+[ERROR]   location: class com.vaccine.tracker.service.impl.ChildServiceImpl
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ReactionServiceImpl.java:[10,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ReactionServiceImpl.java:[11,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ReactionServiceImpl.java:[12,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/controller/ReportController.java:[4,35] cannot find symbol
+[ERROR]   symbol:   class ReportService
+[ERROR]   location: package com.vaccine.tracker.service
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/controller/ReportController.java:[27,13] cannot find symbol
+[ERROR]   symbol:   class ReportService
+[ERROR]   location: class com.vaccine.tracker.controller.ReportController
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/FeedbackServiceImpl.java:[9,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/FeedbackServiceImpl.java:[10,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/FeedbackServiceImpl.java:[11,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/VaccineServiceImpl.java:[7,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/VaccineServiceImpl.java:[8,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/VaccineServiceImpl.java:[9,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/PaymentServiceImpl.java:[9,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/PaymentServiceImpl.java:[10,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/PaymentServiceImpl.java:[11,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ScheduleServiceImpl.java:[10,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ScheduleServiceImpl.java:[11,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ScheduleServiceImpl.java:[12,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ScheduleServiceImpl.java:[19,37] package com.vaccine.tracker.validator does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ScheduleServiceImpl.java:[49,13] cannot find symbol
+[ERROR]   symbol:   class ScheduleValidator
+[ERROR]   location: class com.vaccine.tracker.service.impl.ScheduleServiceImpl
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/UserServiceImpl.java:[7,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/UserServiceImpl.java:[8,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/UserServiceImpl.java:[9,37] package com.vaccine.tracker.exception does not exist
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/UserServiceImpl.java:[27,41] interface expected here
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/entity/User.java:[35,8] com.vaccine.tracker.entity.User is not abstract and does not override abstract method getUsername() in org.springframework.security.core.userdetails.UserDetails
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/entity/Schedule.java:[201,54] 
+cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/entity/Schedule.java:[202,60] 
+cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable vaccine of type com.vaccine.tracker.entity.Vaccine
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/entity/Child.java:[58,20] cannot find symbol
+[ERROR]   symbol:   method setChild(com.vaccine.tracker.entity.Child)
+[ERROR]   location: variable vaccination of type com.vaccine.tracker.entity.Vaccination
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/entity/Child.java:[63,20] cannot find symbol
+[ERROR]   symbol:   method setChild(<nulltype>)
+[ERROR]   location: variable vaccination of type com.vaccine.tracker.entity.Vaccination
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[43,40] cannot find symbol
+[ERROR]   symbol:   class ResourceNotFoundException
+[ERROR]   location: class com.vaccine.tracker.service.impl.ChildServiceImpl
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[47,23] cannot find symbol
+[ERROR]   symbol:   class UnauthorizedException
+[ERROR]   location: class com.vaccine.tracker.service.impl.ChildServiceImpl
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[60,39] cannot find symbol
+[ERROR]   symbol:   method getCurrentUser()
+[ERROR]   location: variable userService of type com.vaccine.tracker.service.UserService
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[63,24] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[64,24] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[65,24] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[68,23] cannot find symbol
+[ERROR]   symbol:   class UnauthorizedException
+[ERROR]   location: class com.vaccine.tracker.service.impl.ChildServiceImpl
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[78,43] incompatible types: java.util.Optional<com.vaccine.tracker.entity.User> cannot be converted to com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[81,39] cannot find symbol
+[ERROR]   symbol:   method getCurrentUser()
+[ERROR]   location: variable userService of type com.vaccine.tracker.service.UserService
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[82,25] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[82,75] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[83,23] cannot find symbol
+[ERROR]   symbol:   class UnauthorizedException
+[ERROR]   location: class com.vaccine.tracker.service.impl.ChildServiceImpl
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[87,55] cannot find symbol
+[ERROR]   symbol:   method findByParentAndFullNameIgnoreCase(com.vaccine.tracker.entity.User,java.lang.String)
+[ERROR]   location: variable childRepository of type com.vaccine.tracker.repository.ChildRepository       
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[89,30] cannot find symbol
+[ERROR]   symbol:   method getDateOfBirth()
+[ERROR]   location: variable existingChild of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[90,27] cannot find symbol
+[ERROR]   symbol:   class BadRequestException
+[ERROR]   location: class com.vaccine.tracker.service.impl.ChildServiceImpl
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[96,14] cannot find symbol
+[ERROR]   symbol:   method setParent(com.vaccine.tracker.entity.User)
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[111,23] cannot find symbol
+[ERROR]   symbol:   class UnauthorizedException
+[ERROR]   location: class com.vaccine.tracker.service.impl.ChildServiceImpl
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[127,23] cannot find symbol
+[ERROR]   symbol:   class UnauthorizedException
+[ERROR]   location: class com.vaccine.tracker.service.impl.ChildServiceImpl
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[135,39] cannot find symbol
+[ERROR]   symbol:   method getCurrentUser()
+[ERROR]   location: variable userService of type com.vaccine.tracker.service.UserService
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[138,24] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[138,68] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[147,39] cannot find symbol
+[ERROR]   symbol:   method getCurrentUser()
+[ERROR]   location: variable userService of type com.vaccine.tracker.service.UserService
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[150,24] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[150,68] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[151,35] cannot find symbol
+[ERROR]   symbol:   method findByFullNameContainingIgnoreCase(java.lang.String)
+[ERROR]   location: variable childRepository of type com.vaccine.tracker.repository.ChildRepository       
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[154,53] cannot find symbol
+[ERROR]   symbol:   method findByFullNameContainingIgnoreCase(java.lang.String)
+[ERROR]   location: variable childRepository of type com.vaccine.tracker.repository.ChildRepository
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[156,43] cannot find symbol
+[ERROR]   symbol:   method getParent()
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[156,82] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[163,39] cannot find symbol
+[ERROR]   symbol:   method getCurrentUser()
+[ERROR]   location: variable userService of type com.vaccine.tracker.service.UserService
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[166,24] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[166,68] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[167,35] cannot find symbol
+[ERROR]   symbol:   method findByDateOfBirthBetween(java.time.LocalDate,java.time.LocalDate)
+[ERROR]   location: variable childRepository of type com.vaccine.tracker.repository.ChildRepository       
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[170,53] cannot find symbol
+[ERROR]   symbol:   method findByDateOfBirthBetween(java.time.LocalDate,java.time.LocalDate)
+[ERROR]   location: variable childRepository of type com.vaccine.tracker.repository.ChildRepository       
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[172,43] cannot find symbol
+[ERROR]   symbol:   method getParent()
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[172,82] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[179,39] cannot find symbol
+[ERROR]   symbol:   method getCurrentUser()
+[ERROR]   location: variable userService of type com.vaccine.tracker.service.UserService
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[182,24] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[182,68] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[183,35] cannot find symbol
+[ERROR]   symbol:   method findChildrenNeedingVaccination(int)
+[ERROR]   location: variable childRepository of type com.vaccine.tracker.repository.ChildRepository       
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[186,53] cannot find symbol
+[ERROR]   symbol:   method findChildrenNeedingVaccination(int)
+[ERROR]   location: variable childRepository of type com.vaccine.tracker.repository.ChildRepository       
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[188,43] cannot find symbol
+[ERROR]   symbol:   method getParent()
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[188,82] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[195,39] cannot find symbol
+[ERROR]   symbol:   method getCurrentUser()
+[ERROR]   location: variable userService of type com.vaccine.tracker.service.UserService
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[197,40] cannot find symbol
+[ERROR]   symbol:   class ResourceNotFoundException
+[ERROR]   location: class com.vaccine.tracker.service.impl.ChildServiceImpl
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[200,24] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[200,68] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[205,21] cannot find symbol
+[ERROR]   symbol:   method getParent()
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/impl/ChildServiceImpl.java:[205,60] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable currentUser of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/service/UserService.java:[50,53] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable user of type com.vaccine.tracker.entity.User
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[29,29] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[30,35] cannot find symbol
+[ERROR]   symbol:   method getFullName()
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[31,38] cannot find symbol
+[ERROR]   symbol:   method getDateOfBirth()
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[32,33] cannot find symbol
+[ERROR]   symbol:   method getGender()
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[33,39] cannot find symbol
+[ERROR]   symbol:   method getMedicalNotes()
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[34,36] cannot find symbol
+[ERROR]   symbol:   method getAllergies()
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[37,18] cannot find symbol
+[ERROR]   symbol:   method getParent()
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[38,39] cannot find symbol
+[ERROR]   symbol:   method getParent()
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[39,41] cannot find symbol
+[ERROR]   symbol:   method getParent()
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[73,14] cannot find symbol
+[ERROR]   symbol:   method setFullName(java.lang.String)
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[74,14] cannot find symbol
+[ERROR]   symbol:   method setDateOfBirth(java.time.LocalDate)
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[75,14] cannot find symbol
+[ERROR]   symbol:   method setGender(com.vaccine.tracker.enums.Gender)
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[76,14] cannot find symbol
+[ERROR]   symbol:   method setMedicalNotes(java.lang.String)
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[77,14] cannot find symbol
+[ERROR]   symbol:   method setAllergies(java.lang.String)
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[93,14] cannot find symbol
+[ERROR]   symbol:   method setFullName(java.lang.String)
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[94,14] cannot find symbol
+[ERROR]   symbol:   method setDateOfBirth(java.time.LocalDate)
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[95,14] cannot find symbol
+[ERROR]   symbol:   method setGender(com.vaccine.tracker.enums.Gender)
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] /C:/Users/Xuan Hai/VaccineTracker/src/main/java/com/vaccine/tracker/mapper/ChildMapper.java:[96,14] cannot find symbol
+[ERROR]   symbol:   method setMedicalNotes(java.lang.String)
+[ERROR]   location: variable child of type com.vaccine.tracker.entity.Child
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles: 
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

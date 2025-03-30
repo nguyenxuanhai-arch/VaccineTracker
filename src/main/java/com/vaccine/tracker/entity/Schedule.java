@@ -1,207 +1,103 @@
 package com.vaccine.tracker.entity;
 
-import com.vaccine.tracker.enums.ScheduleStatus;
+import java.time.LocalDate;
+import java.util.Objects;
 
-import jakarta.persistence.*;
-import jakarta.validation.constraints.Future;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
-import java.time.LocalDateTime;
 
-/**
- * Entity representing a vaccine schedule in the system.
- */
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 @Entity
 @Table(name = "schedules")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Schedule {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    
-    @ManyToOne(fetch = FetchType.LAZY)
+
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "child_id", nullable = false)
     private Child child;
-    
-    @ManyToOne(fetch = FetchType.LAZY)
+
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "vaccine_id", nullable = false)
     private Vaccine vaccine;
-    
+
     @NotNull
-    @Future
-    @Column(name = "schedule_date", nullable = false)
-    private LocalDateTime scheduleDate;
-    
-    @NotNull
-    @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
-    private ScheduleStatus status = ScheduleStatus.PENDING;
-    
-    @Size(max = 500)
-    @Column(name = "notes", columnDefinition = "TEXT")
-    private String notes;
-    
-    @Column(name = "dose_number")
+    private LocalDate scheduledDate;
+
+    private LocalDate administeredDate;
+
     private Integer doseNumber;
-    
+
+    @Enumerated(EnumType.STRING)
+    private ScheduleStatus status;
+
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "order_id")
-    private Order order;
-    
-    @Column(name = "completed_date")
-    private LocalDateTime completedDate;
-    
-    @Column(name = "cancellation_reason")
-    @Size(max = 500)
-    private String cancellationReason;
-    
-    @Column(name = "created_at", nullable = false, updatable = false)
-    private LocalDateTime createdAt;
-    
-    @Column(name = "updated_at")
-    private LocalDateTime updatedAt;
-    
-    @PrePersist
-    protected void onCreate() {
-        createdAt = LocalDateTime.now();
+    @JoinColumn(name = "administered_by")
+    private User provider;
+
+    private String notes;
+
+    // Enum for schedule status
+    public enum ScheduleStatus {
+        SCHEDULED,
+        COMPLETED,
+        MISSED,
+        POSTPONED
     }
-    
-    @PreUpdate
-    protected void onUpdate() {
-        updatedAt = LocalDateTime.now();
+
+    // Helper methods
+    public boolean isComplete() {
+        return this.status == ScheduleStatus.COMPLETED && this.administeredDate != null;
     }
-    
-    // Constructors
-    public Schedule() {
+
+    public boolean isOverdue() {
+        return this.status == ScheduleStatus.SCHEDULED && 
+               this.scheduledDate.isBefore(LocalDate.now());
     }
-    
-    public Schedule(Child child, Vaccine vaccine, LocalDateTime scheduleDate) {
-        this.child = child;
-        this.vaccine = vaccine;
-        this.scheduleDate = scheduleDate;
+
+    public boolean isUpcoming() {
+        return this.status == ScheduleStatus.SCHEDULED && 
+               (this.scheduledDate.isEqual(LocalDate.now()) || 
+                this.scheduledDate.isAfter(LocalDate.now()));
     }
-    
-    // Getters and Setters
-    public Long getId() {
-        return id;
-    }
-    
-    public void setId(Long id) {
-        this.id = id;
-    }
-    
-    public Child getChild() {
-        return child;
-    }
-    
-    public void setChild(Child child) {
-        this.child = child;
-    }
-    
-    public Vaccine getVaccine() {
-        return vaccine;
-    }
-    
-    public void setVaccine(Vaccine vaccine) {
-        this.vaccine = vaccine;
-    }
-    
-    public LocalDateTime getScheduleDate() {
-        return scheduleDate;
-    }
-    
-    public void setScheduleDate(LocalDateTime scheduleDate) {
-        this.scheduleDate = scheduleDate;
-    }
-    
-    public ScheduleStatus getStatus() {
-        return status;
-    }
-    
-    public void setStatus(ScheduleStatus status) {
-        this.status = status;
-        
-        // If the status is set to COMPLETED, record the completion date
-        if (status == ScheduleStatus.COMPLETED) {
-            this.completedDate = LocalDateTime.now();
-        }
-    }
-    
-    public String getNotes() {
-        return notes;
-    }
-    
-    public void setNotes(String notes) {
-        this.notes = notes;
-    }
-    
-    public Integer getDoseNumber() {
-        return doseNumber;
-    }
-    
-    public void setDoseNumber(Integer doseNumber) {
-        this.doseNumber = doseNumber;
-    }
-    
-    public Order getOrder() {
-        return order;
-    }
-    
-    public void setOrder(Order order) {
-        this.order = order;
-    }
-    
-    public LocalDateTime getCompletedDate() {
-        return completedDate;
-    }
-    
-    public void setCompletedDate(LocalDateTime completedDate) {
-        this.completedDate = completedDate;
-    }
-    
-    public String getCancellationReason() {
-        return cancellationReason;
-    }
-    
-    public void setCancellationReason(String cancellationReason) {
-        this.cancellationReason = cancellationReason;
-    }
-    
-    public LocalDateTime getCreatedAt() {
-        return createdAt;
-    }
-    
-    public LocalDateTime getUpdatedAt() {
-        return updatedAt;
-    }
-    
-    /**
-     * Cancels the schedule with a reason.
-     * 
-     * @param reason the reason for cancellation
-     */
-    public void cancel(String reason) {
-        this.status = ScheduleStatus.CANCELLED;
-        this.cancellationReason = reason;
-    }
-    
-    /**
-     * Checks if the schedule can be modified.
-     * 
-     * @return true if modifiable
-     */
-    public boolean isModifiable() {
-        return status.isModifiable();
-    }
-    
+
     @Override
-    public String toString() {
-        return "Schedule{" +
-                "id=" + id +
-                ", childId=" + (child != null ? child.getId() : null) +
-                ", vaccineId=" + (vaccine != null ? vaccine.getId() : null) +
-                ", scheduleDate=" + scheduleDate +
-                ", status=" + status +
-                '}';
+    public int hashCode() {
+        return Objects.hash(id, child, vaccine, doseNumber);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Schedule schedule = (Schedule) obj;
+        
+        // For new objects without IDs yet, compare by child, vaccine and dose number
+        if (id == null || schedule.id == null) {
+            return Objects.equals(child.getId(), schedule.child.getId()) &&
+                   Objects.equals(vaccine.getId(), schedule.vaccine.getId()) &&
+                   Objects.equals(doseNumber, schedule.doseNumber);
+        }
+        
+        return Objects.equals(id, schedule.id);
     }
 }
